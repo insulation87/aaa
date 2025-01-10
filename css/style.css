@@ -1,0 +1,27 @@
+<style>
+    /* 滾動視差樣式 */
+    #about {
+        position: relative;
+        height: 100vh; /* 使該區域高度滿足滾動需求 */
+        overflow: hidden;
+    }
+
+    #about img {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 100%; /* 根據需要調整寬度 */
+        height: auto;
+        will-change: transform; /* 提升性能 */
+        z-index: 1;
+    }
+
+    #about .content {
+        position: relative;
+        z-index: 2;
+        background: rgba(255, 255, 255, 0.8);
+        padding: 20px;
+        border-radius: 10px;
+    }
+</style>

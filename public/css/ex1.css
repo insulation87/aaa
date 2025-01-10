@@ -1,0 +1,69 @@
+body {
+    padding-top: 56px;
+    background: linear-gradient(to bottom, #272afa, #FFA500);
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+footer {
+    margin-top: 20px;
+    text-align: center;
+    padding: 10px 0;
+    background-color: #ff7300;
+}
+
+@keyframes slideInFromRight {
+    from {
+        transform: translateX(100%);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+#map {
+    height: 400px;
+    margin-top: 20px;
+}
+
+.content {
+    height: 50vh;
+    /* 中間內容的高度 */
+    background-color: #f4f4f4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5rem;
+}
+
+.content h2 {
+    margin-bottom: 20px;
+}
+
+#about h1,
+#about p {
+    color: white;
+}
+
+.parallax {
+    height: 50vh;
+    /* 全屏高度 */
+    background-image: url('public/image/bg.png');
+    background-size: cover;
+    background-position: center;
+    background-attachment: scroll;
+    /* GSAP 將控制背景位置 */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 2rem;
+}
+
+.parallax h2 {
+    font-size: 4rem;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+}

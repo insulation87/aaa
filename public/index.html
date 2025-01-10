@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>觀光課</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+        integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="" />
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+        integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/particles.js"></script>
+    <link rel="stylesheet" href="css/style.css">
+
+
+
+
+</head>
+<body>
+
+
+    <!-- 導航欄 -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">首頁</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">關於我們</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link"
+                            href="https://drive.google.com/file/d/1OHWyiQHSeV9oumVFpaQdb-bQ759Fg5oZ/view?usp=drive_link"
+                            target="_blank">遊戲企劃書</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#member">組員介紹</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#schedule">進度報告</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#form">聯繫我們</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link"
+                            href="https://drive.google.com/file/d/1MWKmj4rmCZEgC5UvVWUkpCsM9v33V7PE/view?usp=sharing"
+                            target="_blank">遊戲下載</a>
+                    </li>
+
+
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <section class="parallax">
+        <div class="col-md-6">
+            <img src="image/name.PNG" alt="About us" class="img-fluid">
+        </div>
+    </section>
+
+
+
+
+    <header id="particles-js" class="bg-warning text-white text-center py-5">
+        <div class="container">
+            <h1>這是畢業專題觀光課</h1>
+            <p class="lead">4個大四學生一起做出來的</p>
+        </div>
+    </header>
+
+
+    <!-- 關於我們 -->
+    <section id="about" class="py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <h1>關於我們</h1>
+                    <p>
+                        4位來自台中科大的大四生的畢業專題。
+                    </p>
+                    <p>活過了大四期末校內展。</p>
+                </div>
+                
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- 照片輪替 -->
+    <section id="carousel" class="py-5">
+        <div class="container">
+
+            <div id="photoCarousel" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="image/SuFen.PNG" class="d-block w-100" alt="照片 1">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="image/JiaHao.PNG" class="d-block w-100" alt="照片 2">
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#photoCarousel"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#photoCarousel"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+
+
+        </div>
+    </section>
+
+
+
+    <!-- 組員介紹 -->
+    <section id="member" class="py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <h2>組員介紹</h2>
+                </div>
+                <ul class="list-group">
+                    <li class="list-group-item">遊戲ig: <a href="https://www.instagram.com/guanguang_ke"
+                            target="_blank">guanguang_ke</a></li>
+                    <li class="list-group-item">組長 : 陳宥穎 <a href="https://www.instagram.com/youying_0721"
+                            target="_blank">ig:youying_0721</a></li>
+                    <li class="list-group-item">組員2: 林詩涵 <a href="https://www.instagram.com/cookie0a0"
+                            target="_blank">ig:cookie0a0</a></li>
+                    <li class="list-group-item">組員3: 施柏瑋 <a href="https://www.instagram.com/_.w_.e_.i"
+                            target="_blank">ig:_.w_.e_.i</a></li>
+                    <li class="list-group-item">組員4: 沈永豪 <a href="https://www.instagram.com/snoelion_0105"
+                            target="_blank">ig:snoelion_0105</a></li>
+
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- 進度報告 -->
+    <section id="schedule" class="py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <h2>進度報告</h2>
+                    <p>每周進度報告</p>
+                </div>
+                <ul class="list-group">
+                    <li class="list-group-item">組員1: 主2D美術設計</li>
+                    <li class="list-group-item">組員2: 主3D建模</li>
+                    <li class="list-group-item">組員3: 副3D建模、副程式</li>
+                    <li class="list-group-item">組員4: 主程式</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- 聯繫表單 -->
+    <section id="form" class="bg-light py-5">
+        <div class="container">
+            <h2 class="text-center">聯繫我們</h2>
+            <form action="/contact_me" method="POST" class="mt-4">
+
+                <div class="mb-3">
+                    <label for="name" class="form-label">姓名</label>
+                    <input type="text" class="form-control" id="name" name="name" placeholder="輸入您的姓名" required>
+                </div>
+                <div class="mb-3">
+                    <label for="email" class="form-label">電子郵件</label>
+                    <input type="email" class="form-control" id="email" name="email" placeholder="輸入您的電子郵件" required>
+                </div>
+                <div class="mb-3">
+                    <label for="message" class="form-label">訊息</label>
+                    <textarea class="form-control" id="message" name="message" rows="5" placeholder="輸入您的訊息"
+                        required></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary">提交</button>
+            </form>
+
+        </div>
+    </section>
+
+    <!-- 地圖區域 -->
+    <section id="mapSection" class="py-5">
+        <div class="container">
+            <h2 class="text-center">我們在哪裡</h2>
+            <div id="map"></div>
+        </div>
+    </section>
+    </body>
+    <div id="falling-stars"></div>
+
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 觀光課. 版權所有.</p>
+        </div>
+    </footer>
+
+    <!-- 引入 Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        document.addEventListener('wheel', function (event) {
+            const carousel = document.querySelector('#photoCarousel');
+            if (event.deltaY > 0) {
+                // 向下滾動，切換到下一張圖片
+                const nextButton = carousel.querySelector('.carousel-control-next');
+                if (nextButton) nextButton.click();
+            } else {
+                // 向上滾動，切換到上一張圖片
+                const prevButton = carousel.querySelector('.carousel-control-prev');
+                if (prevButton) prevButton.click();
+            }
+        });
+
+        // 地圖初始化
+        const map = L.map('map').setView([24.15003, 120.68397], 13);
+
+        L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+            maxZoom: 19,
+            attribution: '© OpenStreetMap'
+        }).addTo(map);
+
+        L.marker([24.15003, 120.68397]).addTo(map)
+            .bindPopup('我們在這裡')
+            .openPopup();
+        particlesJS.load('particles-js', 'path-to-particles.json', function () {
+            console.log('Particles.js loaded!');
+        });
+        gsap.registerPlugin(ScrollTrigger);
+        gsap.to(".parallax", {
+            backgroundPosition: "50% 20%", // 視差滾動速度
+            ease: "none",
+            scrollTrigger: {
+                trigger: ".parallax",
+                start: "top bottom", // 開始滾動的區域
+                end: "bottom top",  // 結束滾動的區域
+                scrub: true         // 平滑滾動
+            }
+        });
+        // 這段代碼會初始化 particles.js，並使用你剛創建的 particles.json 配置
+        particlesJS.load('particles-js', 'path-to-particles.json', function () {
+            console.log('Particles.js loaded!');
+        });
+
+
+    </script>
+    <script>
+        document.addEventListener('wheel', function () {
+            createFallingStar();
+        });
+    
+        function createFallingStar() {
+            const fallingStars = document.getElementById('falling-stars');
+            const star = document.createElement('div');
+            star.className = 'star';
+    
+            // 隨機生成星星的位置和動畫時間
+            const startX = Math.random() * window.innerWidth;
+            const size = Math.random() * 10 + 5; // 星星大小
+            const duration = Math.random() * 2 + 1; // 掉落時間
+            const delay = Math.random() * 1; // 延遲
+    
+            star.style.left = startX + 'px';
+            star.style.width = size + 'px';
+            star.style.height = size + 'px';
+            star.style.animationDuration = duration + 's';
+            star.style.animationDelay = delay + 's';
+    
+            fallingStars.appendChild(star);
+    
+            // 當動畫結束時移除星星
+            star.addEventListener('animationend', () => {
+                star.remove();
+            });
+        }
+    </script>
+    
+
+
+</html>
+
+
+
+
